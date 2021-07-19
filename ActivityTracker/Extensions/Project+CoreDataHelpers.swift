@@ -21,6 +21,8 @@ extension Project {
         creationDate ?? Date()
     }
     
+    static let colors = ["Pink", "Purple", "Red", "Orange", "Gold", "Green", "Teal", "Light Blue", "Dark Blue", "Midnight", "Dark Gray", "Gray"]
+    
     var projectItems: [Item] {
         
         let itemsArray = items?.allObjects as? [Item] ?? []
@@ -52,7 +54,7 @@ extension Project {
         return Double(completedItems.count) / Double(originalItems.count)
     }
     
-    static var exampleProject: Project {
+    static var example: Project {
         let controller = DataController(inMemory: true)
         let viewContext = controller.container.viewContext
         
