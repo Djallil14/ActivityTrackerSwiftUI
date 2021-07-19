@@ -9,13 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView{
+            HomeView().tabItem { Label("Home", systemImage: "house") }
+            ProjectView(showClosedProject: false).tabItem { Label("Open", systemImage: "list.bullet") }
+            ProjectView(showClosedProject: true).tabItem { Label("Closed", systemImage: "checkmark") }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
+    static var dataController = DataController.preview
     static var previews: some View {
         ContentView()
+            .environment(\.managedObjectContext, dataController.container.viewContext)
+            .environmentObject(dataController)
     }
 }
