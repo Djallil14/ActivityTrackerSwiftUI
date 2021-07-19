@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    static let homeTag: String? = "home"
     @EnvironmentObject var dataController: DataController
     var body: some View {
         NavigationView {
