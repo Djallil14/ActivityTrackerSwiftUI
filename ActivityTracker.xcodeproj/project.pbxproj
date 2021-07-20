@@ -33,6 +33,8 @@
 		9D0183DB26A67EAA0020718E /* Colors+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0183DA26A67EAA0020718E /* Colors+Addition.swift */; };
 		9D0183E026A6BAD60020718E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D0183E226A6BAD60020718E /* Localizable.strings */; };
 		9D0183E426A6BD680020718E /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9D0183E626A6BD680020718E /* Localizable.stringsdict */; };
+		9D0183EA26A6D0B50020718E /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0183E926A6D0B50020718E /* ItemListView.swift */; };
+		9D0183EC26A6D1BC0020718E /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0183EB26A6D1BC0020718E /* ProjectSummaryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,8 @@
 		9D0183E326A6BADD0020718E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9D0183E526A6BD680020718E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		9D0183E726A6BD6C0020718E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = fr; path = fr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		9D0183E926A6D0B50020718E /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
+		9D0183EB26A6D1BC0020718E /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,11 +164,13 @@
 			children = (
 				9D0183A026A6037A0020718E /* ContentView.swift */,
 				9D0183B626A60EBB0020718E /* HomeView.swift */,
+				9D0183E926A6D0B50020718E /* ItemListView.swift */,
 				9D0183B826A60F6B0020718E /* ProjectView.swift */,
 				9D0183CE26A66D520020718E /* SelectSomethingView.swift */,
 				9D0183C326A637B60020718E /* ItemRowView.swift */,
 				9D0183C726A63B9A0020718E /* ProjectHeaderView.swift */,
 				9D0183D626A672D10020718E /* AwardsView.swift */,
+				9D0183EB26A6D1BC0020718E /* ProjectSummaryView.swift */,
 				9D0183CD26A63E640020718E /* EditingViews */,
 			);
 			path = Views;
@@ -268,11 +274,13 @@
 				9D0183D326A66FB90020718E /* Bundle+Decodable.swift in Sources */,
 				9D0183C826A63B9A0020718E /* ProjectHeaderView.swift in Sources */,
 				9D0183B926A60F6B0020718E /* ProjectView.swift in Sources */,
+				9D0183EA26A6D0B50020718E /* ItemListView.swift in Sources */,
 				9D0183CF26A66D520020718E /* SelectSomethingView.swift in Sources */,
 				9D0183D526A672A40020718E /* Award.swift in Sources */,
 				9D0183C626A638FB0020718E /* Binding+onChange.swift in Sources */,
 				9D0183CC26A63E5F0020718E /* EditProjectView.swift in Sources */,
 				9D0183DB26A67EAA0020718E /* Colors+Addition.swift in Sources */,
+				9D0183EC26A6D1BC0020718E /* ProjectSummaryView.swift in Sources */,
 				9D0183BB26A619790020718E /* items+CoreDataHelpers.swift in Sources */,
 				9D0183AF26A6038F0020718E /* Main.xcdatamodeld in Sources */,
 				9D0183C426A637B60020718E /* ItemRowView.swift in Sources */,
