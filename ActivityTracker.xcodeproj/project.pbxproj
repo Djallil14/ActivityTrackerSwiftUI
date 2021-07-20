@@ -35,7 +35,18 @@
 		9D0183E426A6BD680020718E /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9D0183E626A6BD680020718E /* Localizable.stringsdict */; };
 		9D0183EA26A6D0B50020718E /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0183E926A6D0B50020718E /* ItemListView.swift */; };
 		9D0183EC26A6D1BC0020718E /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0183EB26A6D1BC0020718E /* ProjectSummaryView.swift */; };
+		9D01840F26A790460020718E /* ActivityTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D01840E26A790460020718E /* ActivityTrackerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D01841126A790460020718E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D01839326A6037A0020718E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D01839A26A6037A0020718E;
+			remoteInfo = ActivityTracker;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9D01839B26A6037A0020718E /* ActivityTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +82,9 @@
 		9D0183E726A6BD6C0020718E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = fr; path = fr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		9D0183E926A6D0B50020718E /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		9D0183EB26A6D1BC0020718E /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
+		9D01840C26A790460020718E /* ActivityTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActivityTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D01840E26A790460020718E /* ActivityTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTrackerTests.swift; sourceTree = "<group>"; };
+		9D01841026A790460020718E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +96,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D01840926A790460020718E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				9D01839D26A6037A0020718E /* ActivityTracker */,
+				9D01840D26A790460020718E /* ActivityTrackerTests */,
 				9D01839C26A6037A0020718E /* Products */,
 				9D0183B326A60D850020718E /* Frameworks */,
 			);
@@ -98,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				9D01839B26A6037A0020718E /* ActivityTracker.app */,
+				9D01840C26A790460020718E /* ActivityTrackerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,6 +217,15 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		9D01840D26A790460020718E /* ActivityTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D01840E26A790460020718E /* ActivityTrackerTests.swift */,
+				9D01841026A790460020718E /* Info.plist */,
+			);
+			path = ActivityTrackerTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -214,6 +246,24 @@
 			productReference = 9D01839B26A6037A0020718E /* ActivityTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9D01840B26A790460020718E /* ActivityTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D01841526A790460020718E /* Build configuration list for PBXNativeTarget "ActivityTrackerTests" */;
+			buildPhases = (
+				9D01840826A790460020718E /* Sources */,
+				9D01840926A790460020718E /* Frameworks */,
+				9D01840A26A790460020718E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D01841226A790460020718E /* PBXTargetDependency */,
+			);
+			name = ActivityTrackerTests;
+			productName = ActivityTrackerTests;
+			productReference = 9D01840C26A790460020718E /* ActivityTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -225,6 +275,10 @@
 				TargetAttributes = {
 					9D01839A26A6037A0020718E = {
 						CreatedOnToolsVersion = 12.5.1;
+					};
+					9D01840B26A790460020718E = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 9D01839A26A6037A0020718E;
 					};
 				};
 			};
@@ -243,6 +297,7 @@
 			projectRoot = "";
 			targets = (
 				9D01839A26A6037A0020718E /* ActivityTracker */,
+				9D01840B26A790460020718E /* ActivityTrackerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -259,6 +314,13 @@
 				9D0183A626A6037C0020718E /* Preview Assets.xcassets in Resources */,
 				9D0183A326A6037C0020718E /* Assets.xcassets in Resources */,
 				9D0183E426A6BD680020718E /* Localizable.stringsdict in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D01840A26A790460020718E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +354,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D01840826A790460020718E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D01840F26A790460020718E /* ActivityTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D01841226A790460020718E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D01839A26A6037A0020718E /* ActivityTracker */;
+			targetProxy = 9D01841126A790460020718E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9D0183E226A6BAD60020718E /* Localizable.strings */ = {
@@ -478,6 +556,46 @@
 			};
 			name = Release;
 		};
+		9D01841326A790460020718E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PR37X8G2V5;
+				INFOPLIST_FILE = ActivityTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.djallilelkebir.ActivityTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ActivityTracker.app/ActivityTracker";
+			};
+			name = Debug;
+		};
+		9D01841426A790460020718E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PR37X8G2V5;
+				INFOPLIST_FILE = ActivityTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.djallilelkebir.ActivityTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ActivityTracker.app/ActivityTracker";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -495,6 +613,15 @@
 			buildConfigurations = (
 				9D0183AB26A6037C0020718E /* Debug */,
 				9D0183AC26A6037C0020718E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D01841526A790460020718E /* Build configuration list for PBXNativeTarget "ActivityTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D01841326A790460020718E /* Debug */,
+				9D01841426A790460020718E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

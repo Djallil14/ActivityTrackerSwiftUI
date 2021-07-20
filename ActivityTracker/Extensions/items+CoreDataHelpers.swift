@@ -17,17 +17,14 @@ extension Item {
     var itemCreationDate: Date {
         creationDate ?? Date()
     }
-    
     static var example: Item {
         let controller = DataController(inMemory: true)
         let viewContext = controller.container.viewContext
-        
         let item = Item(context: viewContext)
         item.title = "Example Item"
         item.detail = "A description of an Item"
         item.creationDate = Date()
         item.priority = 3
-        
         return item
     }
     enum SortOrder {

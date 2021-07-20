@@ -9,10 +9,14 @@ import CoreData
 import SwiftUI
 
 class DataController: ObservableObject {
-    let container : NSPersistentCloudKitContainer
+    let container: NSPersistentCloudKitContainer
     
     init(inMemory: Bool = false){
         container = NSPersistentCloudKitContainer(name: "Main")
+        
+        // For testing and previewing purposes, we create a
+        // temporary, in-memory database by writing to /dev/null
+        // so our data is destroyed after the app finishes running.
         
         if inMemory {
             container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
@@ -67,32 +71,36 @@ class DataController: ObservableObject {
     
     func deleteAll(){
         let itemFetchRequest:NSFetchRequest<NSFetchRequestResult> = Item.fetchRequest()
-        let itemBatchDeleteRequest : NSBatchDeleteRequest = NSBatchDeleteRequest(fetchRequest: itemFetchRequest)
+        let itemBatchDeleteRequest: NSBatchDeleteRequest = NSBatchDeleteRequest(fetchRequest: itemFetchRequest)
         _ = try? container.viewContext.execute(itemBatchDeleteRequest)
         
         let projectFetchRequest:NSFetchRequest<NSFetchRequestResult> = Project.fetchRequest()
-        let projectBatchDeleteRequest : NSBatchDeleteRequest = NSBatchDeleteRequest(fetchRequest: projectFetchRequest)
+        let projectBatchDeleteRequest: NSBatchDeleteRequest = NSBatchDeleteRequest(fetchRequest: projectFetchRequest)
         _ = try? container.viewContext.execute(projectBatchDeleteRequest)
     }
     func count<T>(for fetchRequest: NSFetchRequest<T>) -> Int {
         (try? container.viewContext.count(for: fetchRequest)) ?? 0
     }
+    
     func hasEarned(award: Award) -> Bool {
         switch award.criterion {
         case "items":
             let fetchRequest: NSFetchRequest<Item> = NSFetchRequest(entityName: "Item")
             let awardCount = count(for: fetchRequest)
             return awardCount >= award.value
+        // returns true if they added a certain number of items
             
+        
         case "complete":
             let fetchRequest: NSFetchRequest<Item> = NSFetchRequest(entityName: "Item")
             fetchRequest.predicate = NSPredicate(format: "completed = true")
             let awardCount = count(for: fetchRequest)
             return awardCount >= award.value
-            
+        // returns true if they completed a certain number of items
         default:
             // fatalError("Unknown award criterion \(award.criterion).")
             return false
+        // an unknown award criterion; this should never be allowed
         }
     }
 }

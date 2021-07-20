@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct ActivityTrackerApp: App {
-    @StateObject var dataController : DataController
+    @StateObject var dataController: DataController
     
     init(){
         let dataController = DataController()

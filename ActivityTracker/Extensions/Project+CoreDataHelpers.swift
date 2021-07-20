@@ -21,17 +21,13 @@ extension Project {
     var projectCreationDate: Date {
         creationDate ?? Date()
     }
-    
     static let colors = ["Pink", "Purple", "Red", "Orange", "Gold", "Green", "Teal", "Light Blue", "Dark Blue", "Midnight", "Dark Gray", "Gray"]
-    
     var projectItems: [Item] {
         items?.allObjects as? [Item] ?? []
     }
-    
     var label: LocalizedStringKey {
         LocalizedStringKey("\(projectTitle), \(projectItems.count) items, \(completionAmount * 100, specifier: "%g")% complete.")
     }
-    
     var projectItemsDefaultSorted: [Item] {
         projectItems.sorted{ first, second in
             if !first.completed {
@@ -51,7 +47,6 @@ extension Project {
             return first.itemCreationDate < second.itemCreationDate
         }
     }
-    
     var completionAmount: Double {
         let originalItems = items?.allObjects as? [Item] ?? []
         guard originalItems.isEmpty == false else {
@@ -60,7 +55,6 @@ extension Project {
         let completedItems = originalItems.filter(\.completed)
         return Double(completedItems.count) / Double(originalItems.count)
     }
-    
     static var example: Project {
         let controller = DataController(inMemory: true)
         let viewContext = controller.container.viewContext
