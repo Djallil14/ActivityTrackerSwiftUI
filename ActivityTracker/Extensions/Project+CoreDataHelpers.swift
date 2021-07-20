@@ -72,6 +72,4 @@ extension Project {
         project.creationDate = Date()
         return project
     }
-    
-    
 }

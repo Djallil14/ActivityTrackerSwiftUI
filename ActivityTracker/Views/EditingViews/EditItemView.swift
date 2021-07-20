@@ -38,7 +38,8 @@ struct EditItemView: View {
             Section {
                 Toggle("Mark Completed", isOn: $completed.onChange{update()})
             }
-        }.navigationTitle("Edit Item")
+        }
+        .navigationTitle("Edit Item")
         .onDisappear(perform:dataController.save)
     }
     func update() {

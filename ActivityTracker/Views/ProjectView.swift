@@ -77,7 +77,7 @@ struct ProjectView: View {
         NavigationView {
             Group {
                 if !projects.wrappedValue.isEmpty {
-                   projectsList
+                    projectsList
                 } else {
                     Text("There's nothing here right now")
                         .foregroundColor(.secondary)
@@ -94,7 +94,7 @@ struct ProjectView: View {
                     .default(Text("Creation Date")) { sortOrder = .creationDate },
                     .default(Text("Title")) { sortOrder = .title }
                 ])
-        }
+            }
             SelectSomethingView()
         }
     }
@@ -110,13 +110,13 @@ struct ProjectView: View {
     
     func items(for project: Project) -> [Item] {
         switch sortOrder {
-            case .title:
-                return project.projectItems.sorted { $0.itemTitle < $1.itemTitle }
-            case .creationDate:
-                return project.projectItems.sorted { $0.itemCreationDate < $1.itemCreationDate }
-            case .optimized:
-                return project.projectItemsDefaultSorted
-            }
+        case .title:
+            return project.projectItems.sorted { $0.itemTitle < $1.itemTitle }
+        case .creationDate:
+            return project.projectItems.sorted { $0.itemCreationDate < $1.itemCreationDate }
+        case .optimized:
+            return project.projectItemsDefaultSorted
+        }
     }
     
     func addItem(to project: Project){

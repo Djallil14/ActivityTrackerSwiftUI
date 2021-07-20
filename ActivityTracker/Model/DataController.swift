@@ -27,7 +27,7 @@ class DataController: ObservableObject {
     
     static var preview: DataController =  {
         let dataController = DataController(inMemory: true)
-    
+        
         do {
             try dataController.createSampleData()
         } catch {
@@ -83,13 +83,13 @@ class DataController: ObservableObject {
             let fetchRequest: NSFetchRequest<Item> = NSFetchRequest(entityName: "Item")
             let awardCount = count(for: fetchRequest)
             return awardCount >= award.value
-
+            
         case "complete":
             let fetchRequest: NSFetchRequest<Item> = NSFetchRequest(entityName: "Item")
             fetchRequest.predicate = NSPredicate(format: "completed = true")
             let awardCount = count(for: fetchRequest)
             return awardCount >= award.value
-
+            
         default:
             // fatalError("Unknown award criterion \(award.criterion).")
             return false

@@ -18,7 +18,7 @@ struct ItemListView: View {
                 .font(.headline)
                 .foregroundColor(.secondary)
                 .padding(.top)
-
+            
             ForEach(items, content: ItemListRowView.init)
         }
     }
