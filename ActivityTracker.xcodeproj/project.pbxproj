@@ -30,6 +30,7 @@
 		9D0183D526A672A40020718E /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0183D426A672A40020718E /* Award.swift */; };
 		9D0183D726A672D10020718E /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0183D626A672D10020718E /* AwardsView.swift */; };
 		9D0183D926A67BDD0020718E /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D0183D826A67BDD0020718E /* AppIcon.xcassets */; };
+		9D0183DB26A67EAA0020718E /* Colors+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0183DA26A67EAA0020718E /* Colors+Addition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		9D0183D426A672A40020718E /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		9D0183D626A672D10020718E /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
 		9D0183D826A67BDD0020718E /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
+		9D0183DA26A67EAA0020718E /* Colors+Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Addition.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				9D0183BC26A61B770020718E /* Project+CoreDataHelpers.swift */,
+				9D0183DA26A67EAA0020718E /* Colors+Addition.swift */,
 				9D0183D226A66FB90020718E /* Bundle+Decodable.swift */,
 				9D0183BA26A619790020718E /* items+CoreDataHelpers.swift */,
 				9D0183C526A638FB0020718E /* Binding+onChange.swift */,
@@ -250,6 +253,7 @@
 				9D0183D526A672A40020718E /* Award.swift in Sources */,
 				9D0183C626A638FB0020718E /* Binding+onChange.swift in Sources */,
 				9D0183CC26A63E5F0020718E /* EditProjectView.swift in Sources */,
+				9D0183DB26A67EAA0020718E /* Colors+Addition.swift in Sources */,
 				9D0183BB26A619790020718E /* items+CoreDataHelpers.swift in Sources */,
 				9D0183AF26A6038F0020718E /* Main.xcdatamodeld in Sources */,
 				9D0183C426A637B60020718E /* ItemRowView.swift in Sources */,
