@@ -17,7 +17,7 @@ struct ItemRowView: View {
             } icon: {
                 icon
             }
-        }
+        }.accessibilityLabel(label)
     }
     var icon: some View {
         if item.completed {
@@ -29,6 +29,15 @@ struct ItemRowView: View {
         } else {
             return Image(systemName: "checkmark.circle")
                 .foregroundColor(.clear)
+        }
+    }
+    var label: Text {
+        if item.completed {
+            return Text("\(item.itemTitle), completed.")
+        } else if item.priority == 3 {
+            return Text("\(item.itemTitle), high priority.")
+        } else {
+            return Text(item.itemTitle)
         }
     }
 }
