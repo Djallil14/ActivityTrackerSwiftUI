@@ -24,6 +24,7 @@
 		9D0183C826A63B9A0020718E /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0183C726A63B9A0020718E /* ProjectHeaderView.swift */; };
 		9D0183CA26A63DDB0020718E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D0183C926A63DDB0020718E /* Colors.xcassets */; };
 		9D0183CC26A63E5F0020718E /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0183CB26A63E5F0020718E /* EditProjectView.swift */; };
+		9D0183CF26A66D520020718E /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0183CE26A66D520020718E /* SelectSomethingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		9D0183C726A63B9A0020718E /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		9D0183C926A63DDB0020718E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		9D0183CB26A63E5F0020718E /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
+		9D0183CE26A66D520020718E /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				9D0183B626A60EBB0020718E /* HomeView.swift */,
 				9D0183A026A6037A0020718E /* ContentView.swift */,
 				9D0183B826A60F6B0020718E /* ProjectView.swift */,
+				9D0183CE26A66D520020718E /* SelectSomethingView.swift */,
 				9D0183C326A637B60020718E /* ItemRowView.swift */,
 				9D0183C726A63B9A0020718E /* ProjectHeaderView.swift */,
 				9D0183CD26A63E640020718E /* EditingViews */,
@@ -224,6 +227,7 @@
 				9D0183BD26A61B770020718E /* Project+CoreDataHelpers.swift in Sources */,
 				9D0183C826A63B9A0020718E /* ProjectHeaderView.swift in Sources */,
 				9D0183B926A60F6B0020718E /* ProjectView.swift in Sources */,
+				9D0183CF26A66D520020718E /* SelectSomethingView.swift in Sources */,
 				9D0183C626A638FB0020718E /* Binding+onChange.swift in Sources */,
 				9D0183CC26A63E5F0020718E /* EditProjectView.swift in Sources */,
 				9D0183BB26A619790020718E /* items+CoreDataHelpers.swift in Sources */,
