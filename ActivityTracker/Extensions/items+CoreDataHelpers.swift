@@ -30,4 +30,7 @@ extension Item {
         
         return item
     }
+    enum SortOrder {
+        case optimized, title, creationDate
+    }
 }

@@ -24,9 +24,11 @@ extension Project {
     static let colors = ["Pink", "Purple", "Red", "Orange", "Gold", "Green", "Teal", "Light Blue", "Dark Blue", "Midnight", "Dark Gray", "Gray"]
     
     var projectItems: [Item] {
-        
-        let itemsArray = items?.allObjects as? [Item] ?? []
-        return itemsArray.sorted{ first, second in
+        items?.allObjects as? [Item] ?? []
+    }
+    
+    var projectItemsDefaultSorted: [Item] {
+        projectItems.sorted{ first, second in
             if !first.completed {
                 if second.completed{
                     return true
