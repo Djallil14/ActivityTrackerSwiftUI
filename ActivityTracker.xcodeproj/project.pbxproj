@@ -39,6 +39,8 @@
 		9D01841726A793030020718E /* AssetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D01841626A793030020718E /* AssetTest.swift */; };
 		9D01841926A795220020718E /* ProjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D01841826A795220020718E /* ProjectTest.swift */; };
 		9D01841B26A798050020718E /* AwardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D01841A26A798050020718E /* AwardTests.swift */; };
+		9D01841D26A79B6E0020718E /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D01841C26A79B6E0020718E /* DevelopmentTests.swift */; };
+		9D01842126A7A3750020718E /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D01842026A7A3750020718E /* PerformanceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		9D01841626A793030020718E /* AssetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTest.swift; sourceTree = "<group>"; };
 		9D01841826A795220020718E /* ProjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTest.swift; sourceTree = "<group>"; };
 		9D01841A26A798050020718E /* AwardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardTests.swift; sourceTree = "<group>"; };
+		9D01841C26A79B6E0020718E /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
+		9D01842026A7A3750020718E /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +234,8 @@
 				9D01841626A793030020718E /* AssetTest.swift */,
 				9D01841826A795220020718E /* ProjectTest.swift */,
 				9D01841A26A798050020718E /* AwardTests.swift */,
+				9D01841C26A79B6E0020718E /* DevelopmentTests.swift */,
+				9D01842026A7A3750020718E /* PerformanceTests.swift */,
 				9D01841026A790460020718E /* Info.plist */,
 			);
 			path = ActivityTrackerTests;
@@ -369,8 +375,10 @@
 			files = (
 				9D01841726A793030020718E /* AssetTest.swift in Sources */,
 				9D01841B26A798050020718E /* AwardTests.swift in Sources */,
+				9D01842126A7A3750020718E /* PerformanceTests.swift in Sources */,
 				9D01841926A795220020718E /* ProjectTest.swift in Sources */,
 				9D01840F26A790460020718E /* ActivityTrackerTests.swift in Sources */,
+				9D01841D26A79B6E0020718E /* DevelopmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
